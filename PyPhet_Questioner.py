@@ -138,16 +138,14 @@ class GUI:
 
         # Define Website Opener
         def OpenWeb():
-            webbrowser.open("https://th.bing.com/th/id/OIP.T7stegeqRQpjEqr26fHXvQHaFO")
+            webbrowser.open("https://github.com/a-blob/PyPhet")
             print("Browser Opened")
 
 
 
         # Define Website Opener2
         def OpenWe2b():
-            webbrowser.open("https://th.bing.com/th/id/R.03eb1c77a97d6dbecbdfe835e5728677?"
-            "rik=XvGqiHyJg61NbQ&riu=http%3a%2f%2fbetanews.com%2fwp-content%2fuploads%2f2015"
-            "%2f01%2fwindows_10_windows_update.jpg&ehk=ZQ3mQkxqs9k0%2biZG96KCNBWF0aRJY42u3cSNT5bI6iE%3d&")
+            webbrowser.open("https://github.com/a-blob/PyPhet")
             print("Browser Oppened")
 
 

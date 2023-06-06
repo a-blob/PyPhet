@@ -46,6 +46,7 @@ class GUI:
     def __init__(self):
         self.ui = Tk()
         self._setup_main_window()
+        self.ui.iconbitmap('.\icon.ico')
         
 
     # Creat UI Loop    
@@ -75,6 +76,7 @@ class GUI:
             button = ttk.Button(creditmsg, text="   Okay   ", command=lambda: creditmsg.destroy())
             button.pack(side="bottom", fill="none", expand=True)
             creditmsg.resizable(False, False)
+            msg.iconbitmap('.\icon.ico')
             creditmsg.mainloop
             print("Credits Window Displayed\n")
 
@@ -91,6 +93,7 @@ class GUI:
             button = ttk.Button(copymsg, text="   Okay   ", command=lambda: copymsg.destroy())
             button.pack(side="bottom", fill="none", expand=True)
             copymsg.resizable(False, False)
+            msg.iconbitmap('.\icon.ico')
             copymsg.mainloop
             print("Copyright Window Displayed\n")
 
@@ -113,6 +116,7 @@ class GUI:
             button = ttk.Button(versionmsg, text="   Okay   ", command=lambda: versionmsg.destroy())
             button.pack(side="bottom", fill="none", expand=True)
             versionmsg.resizable(False, False)
+            msg.iconbitmap('.\icon.ico')
             versionmsg.mainloop
             print("Version Window Displayed\n")
 
@@ -132,6 +136,7 @@ class GUI:
             button = ttk.Button(aboutmsg, text="   Okay   ", command=lambda: aboutmsg.destroy())
             button.pack(side="bottom", fill="none", expand=True)
             aboutmsg.resizable(False, False)
+            msg.iconbitmap('.\icon.ico')
             aboutmsg.mainloop
             print("About Window Displayed\n")
 
@@ -161,6 +166,7 @@ class GUI:
             butto2 = ttk.Button(updatemsg, text="   Check For Updates   ", command=OpenWe2b)
             butto2.pack(side="bottom", fill="none", expand=True)
             updatemsg.resizable(False, False)
+            msg.iconbitmap('.\icon.ico')
             updatemsg.mainloop
             print("Help Window Displayed\n")
 
@@ -325,6 +331,7 @@ def Warning():
     button = ttk.Button(msg, text="   Okay   ", command=lambda: msg.destroy())
     button.pack(side="bottom", fill="none", expand=True)
     msg.resizable(False, False)
+    msg.iconbitmap('.\icon.ico')
     msg.mainloop()
     
     print("Warning Closed\n")

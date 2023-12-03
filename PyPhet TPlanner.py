@@ -29,7 +29,7 @@ class GUI:
         def copyrightwindow():
             copymsg = tkinter.Tk()
             copymsg.title("Copyright")
-            warningmat = tkinter.Label(copymsg, text="This software is licensed under\nthe MIT License\n\n")
+            warningmat = tkinter.Label(copymsg, text="This software is MIT because this is basically trash.")
             warningmat.pack(side="top", fill="both", expand=False, padx=100, pady=40)
             button = ttk.Button(copymsg, text="   Okay   ", command=lambda: copymsg.destroy())
             button.pack(side="bottom", fill="none", expand=True)
@@ -139,24 +139,6 @@ class GUI:
         self.text_widget.see(END)
 
 
-def warning():
-    msg = tkinter.Tk()
-    msg.title("Disclaimer Message")
-    warningmat = tkinter.Label(msg, text='''
-    Statement: If something happens to\n you in real life because of this software, \n
-    the creators of this software\n will not be responsible!\n\n
-    By either clicking 'Okay' or closing this window, \nyou agree to the statement above.
-    ''')
-    warningmat.pack(side="top", fill="both", expand=False, padx=90, pady=30)
-    button = ttk.Button(msg, text="   Okay   ", command=lambda: msg.destroy())
-    button.pack(side="bottom", fill="none", expand=True)
-    msg.resizable(False, False)
-    msg.iconbitmap('./icon.ico')
-    msg.mainloop()
-
-
 if __name__ == "__main__":
-    warning()
-
     app = GUI()
     app.run()
